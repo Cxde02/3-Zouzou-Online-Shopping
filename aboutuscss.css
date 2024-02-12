@@ -1,0 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/beachday');
+
+#bg{
+    position: fixed; /**/
+}
+
+/*To leave space between and to place text on top of bg img*/
+body{
+    padding-left: 30px;
+    padding-right:30px;
+    position: relative;
+}
+
+.sub1{
+    font-size: 60px;
+    font-family: Beachday;
+    position: relative;
+}
+
+.sub1text{
+    position: relative;
+    font-family: Beachday;
+    -webkit-text-stroke: 0.2px #ffffff;
+    font-size:30px;
+    color: #000000;
+    text-shadow: 1px 1px 3px #8000ff;
+    text-align: justify;
+}
+
+.sub2{
+    font-size: 60px;
+    font-family: Beachday;
+    position: relative;
+}
+
+.sub2text{
+    position: relative;
+    font-family: Beachday;
+    -webkit-text-stroke: 0.2px #ffffff;
+    font-size:30px;
+    color: #000000;
+    text-shadow: 1px 1px 3px #8000ff;
+    text-align: justify;
+}
+
+.sub3{
+    font-size: 60px;
+    font-family: Beachday;
+    position: relative;
+}
+
+.sub3text{
+    position: relative;
+    font-family: Beachday;
+    -webkit-text-stroke: 0.2px #ffffff;
+    font-size:30px;
+    color: #000000;
+    text-shadow: 1px 1px 3px #8000ff;
+    text-align: justify;
+}
+
+.sub4{
+    font-size: 60px;
+    font-family: Beachday;
+    position: relative;
+}
+
+.sub4text{
+    position: relative;
+    font-family: Beachday;
+    -webkit-text-stroke: 0.2px #ffffff;
+    font-size:30px;
+    color: #000000;
+    text-shadow: 1px 1px 3px #8000ff;
+    text-align: justify;
+}
+
+.all{
+    position: relative;
+    font-family: Beachday;
+    line-height: 40px;
+    font-size:22px;
+    -webkit-text-stroke: 0.2px #ffffff;
+    color: #000000;
+    text-shadow: 1px 1px 3px #8000ff;
+    text-align: justify;
+
+}

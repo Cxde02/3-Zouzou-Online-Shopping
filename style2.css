@@ -1,0 +1,455 @@
+/*Import the font*/
+@import url('https://fonts.cdnfonts.com/css/beachday');
+
+.header {
+    height: 1000px !important;
+
+}
+
+/*When hovering any image, cursor changes*/
+img{
+    cursor: pointer !important;
+}
+
+/*'All products' text on products page*/
+#Allp{
+    font-family:Beachday;
+    letter-spacing:5px;
+    font-size:53px !important;
+    color: #fff900 !important;
+    text-shadow: 5px 5px 8px #e0bbff;
+    -webkit-text-stroke: 0.4px black;
+}
+
+/*Placement for the sky video bg*/
+.back-video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/*'Every toy has a.....' text*/
+.welcomeTitle {
+    font-size: 65px;
+    font-family: "Beachday", sans-serif;
+    letter-spacing: 7.5px;
+    -webkit-text-fill-color: #fff900;
+    -webkit-text-stroke: 3px;
+    margin-top: 3rem;
+    width: auto;
+    text-align: center;
+    text-shadow: 3px 4px #8000ff;
+}
+/*Placement and opacity of waving teddy gif*/
+#teddy {
+    position: absolute;
+    mix-blend-mode: multiply;
+    margin-top: 5rem;
+    margin-left: -3rem;
+    scale: 1.05;
+}
+/*Adjusting the height and width of the video to fit laptop screen*/
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/*Placement and opacity for the 2 small waving cats near carousel*/
+.one{
+    position: absolute;
+    display: flex;
+    mix-blend-mode: multiply;
+    margin-left: 41rem;
+    margin-top: -1rem;
+
+}
+
+.two{
+    position: absolute;
+    display: flex;
+    mix-blend-mode: multiply;
+    margin-left: 75rem;
+    margin-top: -1rem;
+
+}
+
+/*Adjusting the carousel box*/
+.carousel {
+    height: 65vh;
+    box-sizing: border-box;
+    background: #E8DF69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Changing the background of the featured brand div*/
+.featuredBrand{
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    background: linear-gradient(#C3E5F5, #C3E5F5, #E8DF69);
+    margin-bottom: 0;
+}
+
+/*Trending at the moment div*/
+.offer {
+    background: linear-gradient(#ff4ff6, #ebd6ff, #ebd6ff, #ebd6ff);
+    /*margin-top: 80px;*/
+    padding: 30px 0;
+    margin-bottom:-51px;
+}
+
+/*Add shadow to bugatti img*/
+.offer-img{
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0, 5));
+
+}
+
+/*move the bugatti img*/
+.col-2 .offer-img {
+    padding: 50px;
+}
+
+/*Checkout page*/
+.col-md-8{
+    margin-left: 50px;
+}
+
+.inner{
+    margin-left: -197px;
+}
+
+#address{
+    margin-left: -197px;
+}
+
+/*Navbar sections*/
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+/*Navbar for login*/
+.navbarlogin {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #EBD6FF;
+}
+
+/*Explore button on homepage*/
+.btn-nav {
+    scale: 1.2;
+    font-size: 25px;
+    display: inline-block;
+    background: #fff900;
+    color: #e3309c;
+    padding: 23px 50px;
+    margin: 25px 0;
+    border-radius: 30px;
+    transition: box-shadow 0.8s ease-in;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.btn-nav:hover {
+    box-shadow: 0 0 0 5px rgb(255, 0, 102);
+    -webkit-text-stroke: 0.3px white;
+    color: #000000;
+    animation: a 0.5s 1 linear;
+}
+
+@keyframes a {
+    0% {transform: scale(0.7, 1.3);
+    }
+    25% {
+        transform: scale(1.3, 0.7);
+    }
+    50% {
+        transform: scale(0.7, 1.3);
+    }
+    75% {
+        transform: scale(1.3, 0.7);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+
+/*Buttons such as search and add to cart */
+.btn {
+    display: inline-block;
+    background: #7f44b7;
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 1s, box-shadow 0.5s linear;
+}
+
+.btn:hover {
+    background: #fffd7f;
+    box-shadow: 0 0 20px #8000ff;
+    -webkit-text-stroke: 0.5px white;
+
+}
+
+/*Container for one toy*/
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: ease-in-out;
+    background-color: transparent;
+}
+
+/*Warning Text*/
+#warningtext{
+    padding-bottom: 20px;
+    font-size:  21px;
+    font-family: Beachday;
+    text-shadow: 1px -2px 1px red;
+    color:black;
+}
+
+/*Adjust size and shadow of all product images*/
+.col-4 img {
+    width: 100%;
+    filter: drop-shadow(7px 2px 8px rgb(0, 0, 0, 5));
+}
+
+
+/*Table in checkout*/
+th {
+    position: relative;
+    text-align: left;
+    padding: 17px;
+    color: #fff;
+    background: #c278ff;
+    font-weight: normal;
+
+}
+
+/*3rd col in table at checkout*/
+.total-price table {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+}
+
+/*Main part of checkout page*/
+.add-product-page {
+    padding: 50px 0;
+    background: linear-gradient(#F1E2FF, #ECD7FF);
+}
+
+/*Account page*/
+.accout-page {
+    padding: 50px 0;
+    background-color: #EBD6FF;
+}
+
+
+td a {
+    color: #fff900;
+    font-size: 13px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+td a:hover {
+    font-size: 16px;
+    color: lawngreen;
+}
+
+/**/
+.form-container2 {
+    background: #fff;
+    width: 900px;
+    height: 1100px;
+    position: relative;
+    text-align: left;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
+}
+
+.form-container2 span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+#indicator {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+.form-container2 form {
+    max-width: 200px;
+    padding: 0 20px;
+    position: absolute;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 3px solid #8000ff;
+    border-radius: 15px;
+}
+
+/*The search bar in footer*/
+.footersearch {
+    width: 30%;
+    height: 30px;
+    margin: 29px 471px;
+    padding: 0 10px;
+    position: relative;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: #8000ff;
+    padding-top: 7px;
+    border-radius: 500px;
+
+}
+
+form .btn:hover {
+    background-color: yellow;
+    -webkit-text-stroke: unset;
+}
+
+form .btn:focus {
+    outline: none;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#LoginForm {
+    left: -300px;
+}
+
+#RegForm {
+    left: 0;
+}
+
+
+.dropbtn {
+    background-color: #7f44b7;
+    color: white;
+    padding: 16px;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Beachday;
+    -webkit-text-stroke: 1.5px black;
+    letter-spacing: 1.5px;
+}
+
+#catetitle{
+    display: block;
+    font-size: 2.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #313131;
+    font-family: Beachday;
+    -webkit-text-stroke: 0.5px #fff900;
+    text-shadow: 2px 2px 2px #ff00cc;
+}
+
+#sss{
+    font-size: 2.5em;
+
+    font-weight: bold;
+    color: #313131;
+    font-family: Beachday;
+    -webkit-text-stroke: 0.5px #fff900;
+    text-shadow: 2px 2px 2px #ff00cc;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    border-radius: 15px;
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 99, 224, 0.65);
+    min-width: 202px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: #fff900;
+    padding: 12px 16px;
+    -webkit-text-stroke: 1.5px #000000;
+    text-decoration: none;
+    display: block;
+    border-radius: 13px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #8c00ff;
+    scale: 1.1;
+    transition: 0.1s;
+    box-shadow: 1px 1px 13px rgb(255, 249, 0);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3d1266;
+}

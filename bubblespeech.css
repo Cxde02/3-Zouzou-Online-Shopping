@@ -1,0 +1,48 @@
+#SpeechBubble {
+    position: absolute;
+    transform-origin: 0 100%;
+    text-align: center;
+    font-family: Beachday, "Helvetica Neue", sans serif;
+    background-color: #5a5a5a;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+    padding: 10px;
+    margin-left: 437px;
+    margin-top: 13rem;
+    transform: scale(0);
+    animation: expand-bounce 4s infinite ease-in-out;
+    animation-fill-mode: forwards;
+}
+/* We need to add a tail to the speech bubble. This is done using
+the ::before pseudo-element. The tail's size is controlled by
+its borders. The right and bottom borders are given a transparent
+color so that the tail still retains its shape while giving the
+desired look */
+#SpeechBubble::before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 5px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #5a5a5a transparent transparent #5a5a5a;
+    transform: rotate(10deg);
+}
+
+/* Here the scale changes from 0 to 1. To add the bounciness
+effect, the scale is set to 1.25 midway through the animation
+to give the animation a nicer effect. */
+@keyframes expand-bounce {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
